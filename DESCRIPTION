@@ -1,17 +1,23 @@
 Package: RailAnalysis
-Title: An Amazing Shiny App
+Title: Analysis of Rail Speed Data by Resource
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "firstname",
-           family = "lastname",
-           role = c("aut", "cre"),
-           email = "your@email.com")
-Description: What the package does (one paragraph).
-License: What license is it under?
+    person("Miranda", "Johnson", , "miranda@afterdata.ca", role = c("aut", "cre"))
+Description: PKG_DESC.
+License: MIT + file LICENSE
+URL: https://github.com/aftermiranda/rail-analysis.git
+BugReports: https://github.com/aftermiranda/rail-analysis.git/issues
 Imports: 
     config,
+    ggplot2,
     golem,
+    shinipsum,
     shiny
+Suggests: 
+    spelling,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
 Encoding: UTF-8
+Language: en-US
 LazyData: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.3.2

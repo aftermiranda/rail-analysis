@@ -3,6 +3,7 @@
 #' @param request Internal parameter for `{shiny}`.
 #'     DO NOT REMOVE.
 #' @import shiny
+#' @import DT
 #' @noRd
 app_ui <- function(request) {
   tagList(
@@ -10,7 +11,14 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # Your application UI logic
     fluidPage(
-      golem::golem_welcome_page() # Remove this line to start building your UI
+      navlistPanel(
+        tabPanel("A Random GGPlot", plotOutput("gg_plot")),
+        "----",
+        tabPanel("A Random Table", DTOutput("data_table")),
+        "----",
+        tabPanel("A Random Image", plotOutput("image"))
+      ),
+      id = "tab"
     )
   )
 }

@@ -15,13 +15,13 @@
 
 ## Dependencies ----
 ## Amend DESCRIPTION with dependencies read from package code parsing
-## install.packages('attachment') # if needed.
 attachment::att_amend_desc()
 
 ## Add modules ----
 ## Create a module infrastructure in R/
-golem::add_module(name = "name_of_module1", with_test = TRUE) # Name of the module
-golem::add_module(name = "name_of_module2", with_test = TRUE) # Name of the module
+golem::add_module(name = "temperature", with_test = TRUE) # Name of the module
+golem::add_module(name = "speed", with_test = TRUE) # Name of the module
+golem::add_module(name = "interaction", with_test = TRUE)
 
 ## Add helper functions ----
 ## Creates fct_* and utils_*
